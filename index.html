@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Todoii</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Todoii is a simple todo app. Use it in your daily task to plan out ahead and manage your life better.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todotheme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+
+  <div class="flex-container">
+    <div class="app_container">
+
+      <div class="bodyhead">
+        <div class="todoname">
+          <label for="todonamechange">Name</label>
+          <textarea id="todonamechange" maxlength="30" cols="100" rows="1" placeholder="Write todo name here..." onfocus="this.placeholder=''" onblur="this.placeholder='Write todo name here...'"></textarea>
+        </div>
+        <div class="date">
+          <p id="dato">
+            <span id="day"></span>
+            <span id="dayofweek"></span>
+            <span id="month"></span>
+            <span id='year'></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="app-body">
+        <div class="input-container">
+          <input id="listinput" autofocus placeholder="Add Something..." autocomplete="off" required maxlength="43" aria-label="input">
+          <button id="additembtn" aria-label="Add">
+            <i class="fas fa-plus fa-lg"></i>
+          </button>
+        </div>
+        <ul class="ullist"></ul>
+      </div>
+
+      <div class="footer">
+        <div class="socialicons">
+          <a href="https://github.com/jesper9610" target="_blank>" hreflang="en" rel="external" aria-label="Link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jesper-rex-4a2a7712a/" target="_blank>" hreflang="en" rel="external" aria-label="Link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/9336969/rekx" target="_blank>" hreflang="en" rel="external" aria-label="Link">
+            <i class="fab fa-stack-overflow"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='todo.js'></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

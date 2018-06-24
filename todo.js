@@ -145,6 +145,7 @@ $(document).on('click', '.donebtn', function () {
 		storageToggleStatus($(self).parent().children('.items').text());
 
 		$(self).parent().children('.items').removeClass('completedtask');
+		$(self).removeClass('donebtncomplete');
 		$(self).parent().children('.items').prop('contenteditable', true);
 	} else {
 		storageToggleStatus($(self).parent().children('.items').text());
@@ -161,7 +162,14 @@ $(document).on('click', '.donebtn', function () {
  * @param {uinteger} expiration 
  */
 function isStorageItemExpired(lastUpdated, expiration = 7) {
-	return getUnixTime() > lastUpdated + (60 * 60 * 24 * expiration);
+	return getUnixTime() > lastUpdated + secondsInDays(expiration);
+}
+
+/**
+ * Get amount of seconds from a number of days
+ */
+function secondsInDays(days) {
+	return 60 * 60 * 24 * days;
 }
 
 /**

@@ -15,9 +15,8 @@ A personal project of mine. To get started on web-develepment. Hope you enjoy :)
 - Custom todo name.
 - Add items to the list.
 - Header changes with day/night cycle.
-- Localstorage Saves items & their current state. 
-- When you remove an item on the list it get's removed from the localstorage.
-- Responsive design. Unless you're on a nokia 3310.
+- Localstorage saves items & their current state. Also supports deleting and saving items.
+- Responsive design.
 
 # Planned Features
 

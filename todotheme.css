@@ -6,11 +6,12 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
+    box-sizing: border-box
 }
 
 /* Boilerplate End */
 
-/* Global/Jquery CSS*/
+/* Global Veriables  CSS*/
 
 .donebtncomplete {
     color: green !important;
@@ -33,13 +34,14 @@ body {
 }
 
 :root {
-    --primary-text-color: #fff;
-    --secondary-text-color: #111;
+    --white-text-color: #fff;
+    --gray-text-color: #eee;
+    --black-text-color: #111;
     --primary-border-color: #eee;
     --secondary-border-color: #ccc;
 }
 
-/* Global/Jquery End*/
+/* Global Veriables End*/
 
 /* Containers */
 
@@ -52,7 +54,7 @@ body {
 }
 
 .app_container {
-    position: relative;
+    position: absolute;
     border-radius: 10px;
     box-shadow: -5px 20px 50px -14px rgba(0, 0, 0, 0.90);
     width: 30%;
@@ -60,64 +62,71 @@ body {
     min-width: 500px;
     height: fit-content;
     display: table;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .input-container {
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 1em;
+    padding: 1rem;
 }
 
 /* Containers End */
 
 /* Header Of Todo App */
-
 .bodyhead {
     background-color: #fff;
     width: 100%;
     height: 200px;
     border-radius: 10px 10px 0px 0px;
+    position: relative;
+    z-index: 10;
+    display: block;
 }
 
 .todoname {
-    color: var(--primary-text-color);
-    height: 65%;
+    color: var(--white-text-color);
+    height: 80%;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 .date {
     width: 100%;
     text-align: center;
-    height: 23%;
+    height: 10%;
+    position: relative;
+    bottom: 0;
 }
 
 #dato,
 #month,
 #year {
     font-size: large;
-    color: var(--primary-text-color);
+    color: var(--gray-text-color);
     font-family: monospace;
+    margin: 0;
 }
 
 #todonamechange {
     border: none;
     background-color: transparent;
-    color: var(--primary-text-color);
+    color: var(--white-text-color);
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-weight: bold;
     outline: none;
     width: 95%;
-    margin-top: 20px;
     resize: none;
     overflow: hidden;
+    padding: 1rem;
 }
 
 #todonamechange::placeholder {
-    color: var(--primary-text-color);
+    color: var(--white-text-color);
     opacity: 1;
 }
 label {
@@ -129,6 +138,7 @@ label {
 /* Body */
 
 .app-body {
+    display: block;
     height: auto;
     height: auto;
     max-height: 560px;
@@ -150,31 +160,31 @@ label {
     width: 100%;
     display: flex;
     display: -ms-flexbox;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     justify-content: space-evenly;
     -ms-flex-pack: justify;
 }
 
 .items {
     border-radius: 4px;
-    padding: 1em;
+    padding: 1rem;
     width: 60%;
     border: none;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-family: monospace;
 }
 
 #listinput,
 #additembtn {
-    padding: 1em;
+    padding: 1rem;
 }
 
 #listinput {
     background-color: var(--primary-border-color);
     border: none;
     width: 60%;
-    color: var(--secondary-text-color);
+    color: var(--black-text-color);
     border-radius: 4px 0px 0px 4px;
     font-family: monospace;
 }
@@ -204,10 +214,10 @@ label {
 }
 
 #additembtn {
-    background-color: var(--primary-text-color);
+    background-color: var(--white-text-color);
     border: 2px solid #eee;
     border-radius: 0px 0px 4px 4px;
-    color: var(--secondary-text-color);
+    color: var(--black-text-color);
     text-align: center;
     outline: none;
 }
@@ -227,7 +237,7 @@ label {
 /* Footer  */
 
 .footer {
-    background-color: var(--primary-text-color);
+    background-color: var(--white-text-color);
     height: 48px;
     display: flex;
     justify-content: center;
@@ -237,14 +247,14 @@ label {
 }
 
 .socialicons>.fab {
-    margin-left: 0.5em;
-    color: var(--primary-text-color);
+    margin-left: 0.5rem;
+    color: var(--white-text-color);
 }
 
 a:visited,
 i:visited {
     text-decoration: none;
-    color: var(--secondary-text-color);
+    color: var(--black-text-color);
 }
 a {
     color: #111;
@@ -283,18 +293,18 @@ a {
         max-height: 100%
     }
     #todonamechange {
-        font-size: 3em;
+        font-size: 3rem;
         overflow: hidden;
     }
     #listinput,
     #additembtn {
-        padding: 0.5em;
+        padding: 0.5rem;
     }
 }
 
 @media only screen and (max-width: 310px) {
     #todonamechange {
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 }
 
@@ -305,7 +315,7 @@ a {
 /* Webkit Scrollbar Material */
 
 ::-webkit-scrollbar {
-    background-color: var(--primary-text-color);
+    background-color: var(--white-text-color);
     width: 5px;
 }
 

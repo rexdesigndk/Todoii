@@ -1,6 +1,6 @@
-[Try it](http://jesper9610.github.io/Todoii/)
-
-[See it in action](https://gyazo.com/84a3526d61fdea62e851c34e66d7d737)
+[See it in action](https://i.gyazo.com/84a3526d61fdea62e851c34e66d7d737.mp4)
+or
+[Try it yourself](http://jesper9610.github.io/Todoii/)
 
 # Todoii A Simple Todo List
 

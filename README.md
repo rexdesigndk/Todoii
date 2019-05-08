@@ -1,4 +1,6 @@
-Demo:  http://erus.design/Todoii/
+[Try it](http://jesper9610.github.io/Todoii/)
+
+[See it in action](https://gyazo.com/84a3526d61fdea62e851c34e66d7d737)
 
 # Todoii A Simple Todo List
 
@@ -21,4 +23,9 @@ A personal project of mine. To get started on web-develepment. Hope you enjoy :)
 # Planned Features
 
 Haven't got any but feel free to suggest something.
+
+# License
+
+The project is released under MIT license.
+
 
